@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnSalir = New System.Windows.Forms.Button()
+        Me.btnIniciar = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'btnSalir
@@ -34,11 +35,21 @@ Partial Class Form1
         Me.btnSalir.Text = "Salir"
         Me.btnSalir.UseVisualStyleBackColor = True
         '
+        'btnIniciar
+        '
+        Me.btnIniciar.Location = New System.Drawing.Point(67, 142)
+        Me.btnIniciar.Name = "btnIniciar"
+        Me.btnIniciar.Size = New System.Drawing.Size(170, 36)
+        Me.btnIniciar.TabIndex = 1
+        Me.btnIniciar.Text = "Iniciar"
+        Me.btnIniciar.UseVisualStyleBackColor = True
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(284, 262)
+        Me.Controls.Add(Me.btnIniciar)
         Me.Controls.Add(Me.btnSalir)
         Me.Name = "Form1"
         Me.Text = "Form1"
@@ -47,4 +58,5 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents btnSalir As Button
+    Friend WithEvents btnIniciar As Button
 End Class
